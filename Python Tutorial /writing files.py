@@ -1,0 +1,7 @@
+employee_file = open("index.html", "w")
+#employee_file = open("employee", "w")
+#employee_file = open("employee2", "w")
+employee_file.write("<p>This is just a website</p>")
+#employee_file.write("Kelly - Customer Service")
+#employee_file.write("\nKelly - Customer Service")
+employee_file.close()
