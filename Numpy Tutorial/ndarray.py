@@ -66,3 +66,111 @@ print("\nElements at indices (0, 3), (1, 2), (2, 1),"
 cond = arr > 0  # cond is a boolean array
 temp = arr[cond]
 print("\nElements greater than 0:\n", temp)
+
+# Python program to demonstrate
+# basic operations on single array
+import numpy as np
+
+a = np.array([1, 2, 5, 3])
+
+# add 1 to every element
+print("Adding 1 to every element:", a + 1)
+
+# subtract 3 from each element
+print("Subtracting 3 from each element:", a - 3)
+
+# multiply each element by 10
+print("Multiplying each element by 10:", a * 10)
+
+# square each element
+print("Squaring each element:", a ** 2)
+
+# modify existing array
+a *= 2
+print("Doubled each element of original array:", a)
+
+# transpose of array
+a = np.array([[1, 2, 3], [3, 4, 5], [9, 6, 0]])
+
+print("\nOriginal array:\n", a)
+print("Transpose of array:\n", a.T)
+
+# Python program to demonstrate
+# unary operators in numpy
+import numpy as np
+
+arr = np.array([[1, 5, 6],
+                [4, 7, 2],
+                [3, 1, 9]])
+
+# maximum element of array
+print("Largest element is:", arr.max())
+print("Row-wise maximum elements:",
+      arr.max(axis=1))
+
+# minimum element of array
+print("Column-wise minimum elements:",
+      arr.min(axis=0))
+
+# sum of array elements
+print("Sum of all array elements:",
+      arr.sum())
+
+# cumulative sum along each row
+print("Cumulative sum along each row:\n",
+      arr.cumsum(axis=1))
+
+# Python program to demonstrate
+# binary operators in Numpy
+import numpy as np
+
+a = np.array([[1, 2],
+              [3, 4]])
+b = np.array([[4, 3],
+              [2, 1]])
+
+# add arrays
+print("Array sum:\n", a + b)
+
+# multiply arrays (elementwise multiplication)
+print("Array multiplication:\n", a * b)
+
+# matrix multiplication
+print("Matrix multiplication:\n", a.dot(b))
+
+# Python program to demonstrate
+# universal functions in numpy
+import numpy as np
+
+# create an array of sine values
+a = np.array([0, np.pi / 2, np.pi])
+print("Sine values of array elements:", np.sin(a))
+
+# exponential values
+a = np.array([0, 1, 2, 3])
+print("Exponent of array elements:", np.exp(a))
+
+# square root of array values
+print("Square root of array elements:", np.sqrt(a))
+
+# Python Program to create a data type object
+import numpy as np
+
+# np.int16 is converted into a data type object.
+print(np.dtype(np.int16))
+
+# Python Program to create a data type object
+# containing a 32 bit big-endian integer
+import numpy as np
+
+# i4 represents integer of size 4 byte
+# > represents big-endian byte ordering and
+# < represents little-endian encoding.
+# dt is a dtype object
+dt = np.dtype('>i4')
+
+print("Byte order is:", dt.byteorder)
+
+print("Size is:", dt.itemsize)
+
+print("Data type is:", dt.name)
