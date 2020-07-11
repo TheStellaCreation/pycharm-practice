@@ -74,3 +74,5 @@ print("\nSum of all array "
 # Adding two arrays
 # Performing Binary operations
 print("\nArray sum:\n", a + b)
+
+print("\narray multi\n", a*b)
