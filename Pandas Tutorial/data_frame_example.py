@@ -246,7 +246,22 @@ print(data)
 for i in data.itertuples():
     print(i)
 
+# Iterating over Columns :
+# importing pandas module
+import pandas as pd
 
+# making data frame from csv file
+data = pd.read_csv("/Users/stellayoyo/Downloads/nba.csv")
+
+# for data visualization we filter first 3 datasets
+col = data.head(3)
+
+# creating a list of dataframe columns
+clmn = list(col)
+
+for i in clmn:
+        # printing a third element of column
+        print(col[i][2])
 
 
 
