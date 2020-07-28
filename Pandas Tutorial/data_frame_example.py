@@ -144,6 +144,7 @@ df = pd.DataFrame(dict)
 df.notnull()
 
 print(df.notnull())
+print(df.isnull())
 
 # Filling missing values using fillna(), replace() and interpolate() :
 import pandas as pd
