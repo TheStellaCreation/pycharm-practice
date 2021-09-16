@@ -1,0 +1,6 @@
+1. git status
+2. git add .
+3. git commit -m "type your message here"
+4. git push (-f origin HEAD)
+5. git restore --staged file_name
+6.
